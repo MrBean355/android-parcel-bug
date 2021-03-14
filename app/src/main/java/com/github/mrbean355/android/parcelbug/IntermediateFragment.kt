@@ -29,7 +29,7 @@ class IntermediateFragment : Fragment() {
     }
 
     companion object {
-        fun newInstance(destination: Intent): IntermediateFragment =
+        fun newInstance(destination: Intent?): IntermediateFragment =
             IntermediateFragment().apply {
                 arguments = bundleOf(KEY_DESTINATION to destination)
             }
