@@ -10,7 +10,8 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         super.onCreate(savedInstanceState)
         findViewById<View>(R.id.test).setOnClickListener {
             val destination = DestinationActivity.createIntent(this, TestModel(999))
-            startActivity(IntermediateActivity.createIntent(this, destination))
+            val intermediate = IntermediateActivity.createIntent(this, destination)
+            startActivity(intermediate)
         }
     }
 }
