@@ -1,12 +1,14 @@
 # Android Parcel Bug
-This repository aims to reproduce a bug with unmarshalling `Parcelable`s in Fragment 1.3.1.
+**NOTE: This bug has been fixed in [Activity 1.2.2](https://developer.android.com/jetpack/androidx/releases/activity#1.2.2).**
 
-This issue does not exist in Fragment 1.2.5.
+This repository aims to reproduce a bug with unmarshalling `Parcelable`s in Activity 1.2.1.
+
+This issue does not exist in Activity 1.1.0.
 
 ### Testing
-Build & run the app. Click on the "Test" button to reproduce the crash on Fragment 1.3.1.
+Build & run the app. Click on the "Test" button to reproduce the crash on Activity 1.2.1.
 
-To switch to Fragment 1.2.5, update `gradle.properties` and do a clean build:
+To switch to Activity 1.1.0, update `gradle.properties` and do a clean build:
 ```properties
 app.useNewVersions=false
 ```
